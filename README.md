@@ -1,92 +1,49 @@
 
-# Module 3 -  Final Project Specifications
+# Module 3 -  Final Project 
 
-## Introduction
+## Introduction to Northwind Speciality Foods 
 
-In this lesson, we'll review all the guidelines and specifications for the final project for Module 3.
+This data set represents a fictional retailer, Northwind, and was created by Microsoft.  
 
-## Objectives
+Northwind is a world-wide merchant that sells speciality food and beverages.  It has a sales office in the United Kingdom with 4 sales representatives, one who is also a manager.  The other sales office is located in the United states, has 5 sales people, one who is the VP and one who person who is responsible for inside sales. Inside sales representatives are typically people who work with the customers to find out what they want, create solutions and help smooth the sales process.
 
-* Understand all required aspects of the Final Project for Module 3
-* Understand all required deliverables
-* Understand what constitutes a successful project
+The data set runs from July of 2012 until early May of 2014.  Northwind carries a line of 77 products from the following 8 categories:
+ - Beverages
+ - Condiments
+ - Confections
+ - Dairy Products
+ - Grains/Cereals
+ - Meat/Poultry
+ - Produce
+ - Seafood
+ 
+Northwind has 29 world-wide suppliers and uses 3 different shipping companies.  The schema of the data base can be found in the jupyter notebook.
 
-### Final Project Summary
+## Objective
+The objective of the project is to access the data, explore it, analysize it and answer for 4 questions using statisical tests.
 
-Another module down--you're half way there!
-
-<img src='https://raw.githubusercontent.com/learn-co-curriculum/dsc-mod-3-project/master/halfway-there.gif'>
-
-For the culmination of Module 3, you just need to complete the final project!
-
-### The Project
-
-For this project, you'll be working with the Northwind database--a free, open-source dataset created by Microsoft containing data from a fictional company. You probably remember the Northwind database from our section on Advanced SQL. Here's the schema for the Northwind database:
-
-<img src='https://raw.githubusercontent.com/learn-co-curriculum/dsc-mod-3-project/master/Northwind_ERD_updated.png'>
-
-The goal of this project is to test your ability to gather information from a real-world database and use your knowledge of statistical analysis and hypothesis testing to generate analytical insights that can be of value to the company.
 
 ## The Deliverables
 
-The goal of your project is to query the database to get the data needed to perform a statistical analysis.  In this statistical analysis, you'll need to perform a hypothesis test (or perhaps several) to answer the following question:
 
-**_Does discount amount have a statistically significant effect on the quantity of a product in an order? If so, at what level(s) of discount?_**
+1. My **_Jupyter Notebook_** contains the code I've written for this project. It is in a file labeled: project.ipynb.
+2. This **README.md** file in the GitHub repository that describes the contents of the repository. 
+3. A **_[Blog Post]** found at: https://www.blogger.com/blogger.g?blogID=1842951420674057543#allposts
+4. An **_"Executive Summary" PowerPoint Presentation_** that explains the hypothesis tests, the findings, and the relevance to company stakeholders.  It can be found on youtube at: https://studio.youtube.com/channel/UCou5q5SnTNhH4nvsn_CjhjQ/videos/upload?filter=%5B%5D&sort=%7B"columnType"%3A"date"%2C"sortOrder"%3A"DESCENDING"%7D
 
-In addition to answering this question with a hypothesis test, you will also need to come up with **_at least 3 other hypotheses to test on your own_**.  These can by anything that you think could be imporant information for the company.
+##  Conclusion and Business Recommendations
 
-For this hypothesis, be sure to specify both the **_null hypothesis_** and the **_alternative hypothesis_** for your question.  You should also specify if this is one-tail or a two-tail test.
+Data collection of the Northwind company was collected from July, 2012 until early May, 2014.  Over that perioed of time, revenue was steadily increasing.  The purpose of this report is to analyze the data and determine if some factors have statistical significance to that growth.  This information about the business model may be helpful to determine the future goals and strategies.
 
-For online students, there will be four deliverables for this project:
-
-1. A **_Jupyter Notebook_** containing any code you've written for this project. This work will need to be pushed to your GitHub repository in order to submit your project.
-2. An organized **README.md** file in the GitHub repository that describes the contents of the repository. This file should be the source of information for navigating through the repository.
-3. A **_[Blog Post](https://github.com/learn-co-curriculum/dsc-welcome-blogging)_**.
-4. An **_"Executive Summary" PowerPoint Presentation_** that explains the hypothesis tests you ran, your findings, and their relevance to company stakeholders.  
-
-Note: On-campus students may have different delivarables, please speak with your instructor. 
-
-### Jupyter Notebook Must-Haves
-
-For this project, your Jupyter Notebook should meet the following specifications:
-
-**_Organization/Code Cleanliness_**
-
-* The notebook should be well organized, easy to follow, and code is commented where appropriate.  
-<br>  
-    * Level Up: The notebook contains well-formatted, professional looking markdown cells explaining any substantial code. All functions have docstrings that act as professional-quality documentation.  
-<br>      
-* The notebook is written to technical audiences with a way to both understand your approach and reproduce your results. The target audience for this deliverable is other data scientists looking to validate your findings.  
-<br>    
-* Any SQL code written to source data should also be included.  
-
-**_Findings_**
-
-* Your notebook should clearly show how you arrived at your results for each hypothesis test, including how you calculated your p-values.   
-<br>
-* You should also include any other statistics that you find relevant to your analysis, such as effect size.
-
-### Blog Post Must-Haves
-
-Refer back to the [Blogging Guidelines](https://github.com/learn-co-curriculum/dsc-welcome-blogging) for the technical requirements and blog ideas.
+Four questions about the Northwind data set were presented:
+- Does discount amount have a statistically significant effect on the quantity of a product in a order? If so, at what level(s) of discount?
+- Is there a statistical difference in the average size of orders in dollars per sale between the employees in US and UK offices? 
+- Since there may (or may not be) a difference between the US and UK sales office in average revenue per order, does that have to do with the discounting differences between employees?
+- Does one category (1 of the 8) of product have a significantly higher impact on sales than others?
 
 
-### Executive Summary Must-Haves
+Null hypotheses and alternative hypotheses where declared, the data bases were queried to find the supporting data using SQL lite and statistical tests were performed on the data.  Student's t-test, Welch's t-test, ANOVA, the Central Limit Theorem (sampling means), p-value calculations, power calculations and effect size calculations were administered to build the case to accept or reject the null hypotheses.
 
-Your presentation should:
+It is interesting to note that after November, 2013 revenue dramatically increased. The data set provided factual information to explain the increase (increasing number of new customers, increasing sales of product). However, the data set could not provide insight into any business plans that may have been implemented with the goal of increasing sales. For example, was there a positive reference in the news about Northwind that brought new customers? Was there a competitor challenging Northwind's customer base and the employees intensified their efforts or were incentivized to intensify their efforts? Was there a trade show that Northwind attended in order to expose their name to more customers? Was there a marketing campaign implemented?
 
-* Contain between 5-10 professional quality slides detailing:
-<br>  
-    * A high-level overview of your methodology  
-    <br>  
-    * The results of your hypothesis tests  
-    <br>  
-    * Any real-world recommendations you would like to make based on your findings (ask yourself--why should the executive team care about what you found? How can your findings help the company?)  
-    <br>  
-* Take no more than 5 minutes to present  
-<br>  
-* Avoid technical jargon and explain results in a clear, actionable way for non-technical audiences.  
-
-## Grading Rubric 
-
-Online students can find a PDF of the grading rubric for this project [here](https://github.com/learn-co-curriculum/dsc-mod-3-project/blob/master/module3_project_rubric.pdf). _Note: On-campus students may have different requirements, please speak with your instructor._
+Based on the statistical testing done, it appears that providing discounts to customers does have an impact on the quantity of products sold.  Discounting at the 15% and 25% level were the most signficant, and can be useful information when developing future marketing campaigns and sales strategies. Northwind may want to develop a company policy on discounting so there is consistency amoung orders and customers, and to minimize lost revenue from using discounts (1-14%, 20%) that are statistically significant. Additionally, it was found that the meal/poutry category of products have the most significant contribution to sales over any other category.  This knowledge can be useful for broadening the product offerings as a goal of increasing sales.  Northwind may want to use that knowledge to develop marketing campaigns to further increase the sales of the meat/poultry category in order to maximize revenues. Finally, regarding the two other queries about employee sales productivity and discouting, there was not enough evidence to suggest that there is a difference between the UK and US sales office.  This is good news that the two offices operate in sync.  However, it would be worthwhile to review sales and marketing plans to be sure both offices are provided the same level of support, education, tools and incentives going forward in the future.
